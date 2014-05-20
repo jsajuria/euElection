@@ -4,7 +4,6 @@
 ##' @param text is the text column of the tweets data frame
 #' @keywords Twitter, subset
 #' @author Javier Sajuria
-#' @export
 #' @examples
 #' clean.tweets()
 
