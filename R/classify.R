@@ -3,7 +3,6 @@
 #' This function is based on Pablo Barbera's workshop in Internet data collection
 ##' @param words is the text, pos.words and neg.words come from the lexicon. Use the example first
 #' @keywords Twitter, subset
-#' @export
 #' @author Javier Sajuria
 #' @examples
 #' lexicon <- read.csv("https://raw.githubusercontent.com/pablobarbera/workshop/master/lexicon.csv", stringsAsFactors = F)
