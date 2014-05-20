@@ -9,7 +9,7 @@
 #' subset_cons()
 
 subset_cons <- function(df){
-  a <-c('conservative', '^tory','cameron')
+  a <-c('conservative', '^tory','^cameron^')
   x <- clean.tweets(df$text)
   y <- subset(df, grepl(paste(a,collapse="|"), x), drop = TRUE)
   return(y)
