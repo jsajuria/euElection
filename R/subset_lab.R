@@ -10,7 +10,7 @@
 
 subset_lab <- function(df){
   labour <-c('miliband', 'labour')
-  x <- clean.tweets(df$text)
+  x <- clean_tweets(df$text)
   y <- subset(df, grepl(paste(labour,collapse="|"), x), drop = TRUE)
   return(y)
 }
