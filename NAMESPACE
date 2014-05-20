@@ -2,7 +2,7 @@
 
 export(classifier)
 export(classify)
-export(clean.tweets)
+export(clean_tweets)
 export(subset_cons)
 export(subset_lab)
 export(subset_libdem)
