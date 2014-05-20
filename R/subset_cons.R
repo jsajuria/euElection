@@ -4,7 +4,6 @@
 #' @author Javier Sajuria
 ##' @param df is the dataframe of tweets. The text of the tweets whould be under a column named "text"
 #' @keywords Twitter, subset
-#' @export
 #' @examples
 #' subset_cons()
 
