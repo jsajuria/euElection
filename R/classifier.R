@@ -6,7 +6,7 @@
 #' @export
 #' @author Javier Sajuria
 #' @examples
-#' lexicon <- read.csv("https://raw.githubusercontent.com/pablobarbera/workshop/master/lexicon.csv", stringsAsFactors = F)
+#' lexicon <- read.csv("https://raw.githubusercontent.com/jsajuria/euElection/lexicon.csv", stringsAsFactors = F)
 #' pos.words <- lexicon$word[lexicon$polarity == "positive"]
 #' neg.words <- lexicon$word[lexicon$polarity == "negative"]
 #' classifier(tweets, pos.words, neg.words, keyword = "")
