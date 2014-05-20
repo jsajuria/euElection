@@ -14,7 +14,7 @@ classifier <- function(tweets, pos.words, neg.words, keyword) {
   # subsetting tweets that contain the keyword
   relevant <- grep(keyword, tweets$text, ignore.case = TRUE)
   # preparing tweets for analysis
-  clean.tweets <- function(text) {
+  clean_tweets <- function(text) {
     # loading required packages
     lapply(c("tm", "Rstem", "stringr"), require, c = T, q = T)
     words <- removePunctuation(text)
