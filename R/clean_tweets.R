@@ -8,7 +8,7 @@
 #' @examples
 #' clean.tweets()
 
-clean.tweets <- function(text) {
+clean_tweets <- function(text) {
   # loading required packages
   lapply(c("tm", "Rstem", "stringr"), require, c = T, q = T)
   words <- removePunctuation(text)
