@@ -3,7 +3,6 @@
 #' This function is based on Pablo Barbera's workshop in Internet data collection. You need to load the lexicon first and create the pos.words and neg.words objects first (see example)
 ##' @param tweets is the dataframe of tweets. pos.words and neg.words come from the lexicon (see example). The keyword is the topic used to subset the data
 #' @keywords Twitter, subset
-#' @export
 #' @author Javier Sajuria
 #' @examples
 #' lexicon <- read.csv("https://raw.githubusercontent.com/jsajuria/euElection/lexicon.csv", stringsAsFactors = F)
