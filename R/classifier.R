@@ -18,7 +18,7 @@ classifier <- function(tweets, pos.words, neg.words, keyword) {
     # loading required packages
     lapply(c("tm", "Rstem", "stringr"), require, c = T, q = T)
     words <- removePunctuation(text)
-    words <- wordStem(words)
+    words <- stemDocument(words)
     # spliting in words
     words <- str_split(text, " ")
     return(words)
