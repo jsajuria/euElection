@@ -23,7 +23,7 @@ classifier <- function(tweets, pos.words, neg.words, keyword) {
     words <- str_split(text, " ")
     return(words)
   }
-  words <- clean.tweets(tweets$text[relevant])
+  words <- clean_tweets(tweets$text[relevant])
   # classifier
   classify <- function(words, pos.words, neg.words) {
     # count number of positive and negative word matches
