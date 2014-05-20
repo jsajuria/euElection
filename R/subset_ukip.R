@@ -9,7 +9,7 @@
 
 subset_ukip <- function(df){
   a <-c('ukip','farage')
-  x <- clean.tweets(df$text)
+  x <- clean_tweets(df$text)
   y <- subset(df, grepl(paste(a,collapse="|"), x), drop = TRUE)
   return(y)
 }

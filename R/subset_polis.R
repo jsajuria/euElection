@@ -11,7 +11,7 @@
 subset_polis <- function(df){
   searchterms<- c('europe','ukip','farage','labour','miliband','conservative','cameron','libdem','clegg','lucas','green party','tory','politic','election','EU','parliament','government','pmq',
                   'vote','opposition')
-  x <- clean.tweets(df$text)
+  x <- clean_tweets(df$text)
   y <- subset(df, grepl(paste(searchterms,collapse="|"), x), drop = TRUE)
   return(y)
 }

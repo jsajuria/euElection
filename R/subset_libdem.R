@@ -10,7 +10,7 @@
 
 subset_libdem <- function(df){
   a <-c('libdem','liberal democrat','clegg')
-  x <- clean.tweets(df$text)
+  x <- clean_tweets(df$text)
   y <- subset(df, grepl(paste(a,collapse="|"), x), drop = TRUE)
   return(y)
 }
