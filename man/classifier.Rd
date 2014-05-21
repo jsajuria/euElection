@@ -12,7 +12,7 @@ classifier(tweets, pos.words, neg.words, keyword)
 This function is based on Pablo Barbera's workshop in Internet data collection. You need to load the lexicon first and create the pos.words and neg.words objects first (see example)
 }
 \examples{
-lexicon <- read.csv("https://raw.githubusercontent.com/jsajuria/euElection/lexicon.csv", stringsAsFactors = F)
+lexicon <- data("lexicon.csv", stringsAsFactors = F)
 pos.words <- lexicon$word[lexicon$polarity == "positive"]
 neg.words <- lexicon$word[lexicon$polarity == "negative"]
 classifier(tweets, pos.words, neg.words, keyword = "")
